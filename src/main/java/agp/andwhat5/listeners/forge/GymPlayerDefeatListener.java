@@ -78,7 +78,7 @@ public class GymPlayerDefeatListener {
                             	bts.gym.Commands.forEach(i -> Sponge.getCommandManager().process((CommandSource) Sponge.getServer(), i.trim().replace("%player%", challenger.getName()).replace("%leader%", leader.getName())));
                             }
 
-                            challenger.sendMessage(Utils.toText("&7Congratulations, you defeated the &b" + bts.gym.Name + " &7gym! ", true));
+                            challenger.sendMessage(Utils.toText("&7Parabéns, voce derrotou o ginásio de &b" + bts.gym.Name + " &7! ", true));
 
                             if (AGPConfig.Announcements.winAnnouncement) {
                                 Sponge.getServer().getBroadcastChannel().send(Utils.toText(AGPConfig.Announcements.winMessage
